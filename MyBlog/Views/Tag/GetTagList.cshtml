@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MyBlog.Models.Tag>
+
+@{
+    Layout = null;
+}
+
+<div class="blog-tags">
+    <h3>Tags</h3>
+    <ul class="blog-tags">
+        @foreach (var item in Model)
+        {
+            <li><a href="#" class="blog-tag">@item.TagName</a></li>
+        }
+    </ul>
+</div>
